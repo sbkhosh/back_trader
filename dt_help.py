@@ -40,7 +40,7 @@ class Helper():
             print('function:%r took: %2.2f sec' % (f.__name__,  end - start))
             return(result)
         return wrapper
-
+   
     @staticmethod
     def get_delim(filename):
         with open(filename, 'r') as csvfile:

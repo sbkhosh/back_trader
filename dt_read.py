@@ -30,12 +30,14 @@ class DataProcessor():
         self.start_date = self.conf.get('start_date')
         self.end_date = self.conf.get('end_date')
         self.ticker = self.conf.get('ticker')
+        self.cash = self.conf.get('cash')
         
     @Helper.timing
     def process(self):
         start_date = self.start_date
         end_date = self.end_date
         ticker = self.ticker
+        cash = self.cash
         
         date_range = pd.bdate_range(start=start_date,end=end_date)
         values = pd.DataFrame({'Dates': date_range})
