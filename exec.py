@@ -12,7 +12,7 @@ import yaml
 
 from datetime import datetime, timedelta
 from dt_help import Helper
-from dt_model import SmaCross, LogPrice, SmaEma, BollStrat
+from dt_model import SmaCross, LogPrice, SmaEma, BollStrat, FractalBollStrat
 from dt_read import DataProcessor
 from pandas.plotting import register_matplotlib_converters
 
@@ -40,4 +40,6 @@ if __name__ == '__main__':
     strat_1 = LogPrice.exec_model(obj_reader.values,obj_reader.cash)
     strat_2 = SmaEma.exec_model(obj_reader.values,obj_reader.cash)
     strat_3 = BollStrat.exec_model(obj_reader.values,obj_reader.cash)
+    strat_4 = FractalBollStrat.exec_model(obj_reader.values,obj_reader.cash)
+
     
