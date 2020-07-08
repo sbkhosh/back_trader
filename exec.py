@@ -35,11 +35,11 @@ if __name__ == '__main__':
     obj_reader = DataProcessor('data_in','data_out','conf_model.yml')
     obj_reader.read_prm()   
     obj_reader.process()
-    
-    strat_0 = SmaCross.exec_model(obj_reader.values,obj_reader.cash)
-    strat_1 = LogPrice.exec_model(obj_reader.values,obj_reader.cash)
-    strat_2 = SmaEma.exec_model(obj_reader.values,obj_reader.cash)
-    strat_3 = BollStrat.exec_model(obj_reader.values,obj_reader.cash)
-    strat_4 = FractalBollStrat.exec_model(obj_reader.values,obj_reader.cash)
+
+    # strat_0 = SmaCross.exec_model(obj_reader.values,obj_reader.cash)
+    # strat_1 = LogPrice.exec_model(obj_reader.values,obj_reader.cash)
+    # strat_2 = SmaEma.exec_model(obj_reader.values,obj_reader.cash)
+    # strat_3 = BollStrat.exec_model(obj_reader.values,obj_reader.cash)
+    # strat_4 = FractalBollStrat.exec_model(obj_reader.values,obj_reader.cash)
 
     
